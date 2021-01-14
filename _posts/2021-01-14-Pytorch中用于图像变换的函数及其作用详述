@@ -1,0 +1,126 @@
+---
+title: Pytorch中用于图像变换的函数及其作用详述（函数使用待更新）
+tags:
+  - Pytorch技术
+---
+
+## Pytorch可以实现Tensor和PIL通用的图像变换函数包：
+
+`torchvision.transforms.functional`
+
+此页面包含所有pytorch的图像变换的函数
+https://pytorch.org/docs/stable/torchvision/transforms.html#transforms-on-pil-image-and-torch-tensor
+
+```
+#Brightness adjusted image. 
+#亮度调节
+torchvision.transforms.functional.adjust_brightness(img: torch.Tensor, brightness_factor: float) → torch.Tensor
+
+#Contrast adjusted image. 
+#对比度调节
+torchvision.transforms.functional.adjust_contrast(img: torch.Tensor, contrast_factor: float) → torch.Tensor
+
+#Perform gamma correction on an image. 
+#伽马校正
+torchvision.transforms.functional.adjust_gamma(img: torch.Tensor, gamma: float, gain: float = 1) → torch.Tensor
+
+#Adjust hue of an image. 
+#色调调节
+torchvision.transforms.functional.adjust_hue(img: torch.Tensor, hue_factor: float) → torch.Tensor
+
+#Adjust color saturation of an image. 
+#调节色彩饱和度
+torchvision.transforms.functional.adjust_saturation(img: torch.Tensor, saturation_factor: float) → torch.Tensor
+
+#Performs Gaussian blurring on the img by given kernel.
+#高斯模糊
+torchvision.transforms.functional.gaussian_blur(img: torch.Tensor, kernel_size: List[int], sigma: Optional[List[float]] = None) → torch.Tensor
+
+#Normalize a tensor image with mean and standard deviation.
+#使用均值和标准差对图像做标准化
+torchvision.transforms.functional.normalize(tensor: torch.Tensor, mean: List[float], std: List[float], inplace: bool = False) → torch.Tensor
+
+#Apply affine transformation on the image keeping image center invariant.
+#保证图像中心不变的仿射变换
+torchvision.transforms.functional.affine(img: torch.Tensor, angle: float, translate: List[int], scale: float, shear: List[float], resample: int = 0, fillcolor: Optional[int] = None) → torch.Tensor
+
+#Rotate the image by angle. 
+#通过角度来旋转图像
+torchvision.transforms.functional.rotate(img: torch.Tensor, angle: float, resample: int = 0, expand: bool = False, center: Optional[List[int]] = None, fill: Optional[int] = None) → torch.Tensor
+
+#Horizontally flip the given PIL Image or Tensor.
+#水平翻转
+torchvision.transforms.functional.hflip(img: torch.Tensor) → torch.Tensor
+
+#Vertically flip the given PIL Image or torch Tensor.
+#竖向翻转
+torchvision.transforms.functional.vflip(img: torch.Tensor) → torch.Tensor
+
+#Perform perspective transform of the given image
+#投影变换（透视变换）
+torchvision.transforms.functional.perspective(img: torch.Tensor, startpoints: List[List[int]], endpoints: List[List[int]], interpolation: int = 2, fill: Optional[int] = None) → torch.Tensor
+
+#Erase the input Tensor Image with given value.
+#擦除指定区域的图像数据
+torchvision.transforms.functional.erase(img: torch.Tensor, i: int, j: int, h: int, w: int, v: torch.Tensor, inplace: bool = False) → torch.Tensor
+
+#Crop the given image at specified location and output size.
+#在指定位置裁剪图片
+torchvision.transforms.functional.crop(img: torch.Tensor, top: int, left: int, height: int, width: int) → torch.Tensor
+
+#Crops the given image at the center.
+#中心裁剪图片
+torchvision.transforms.functional.center_crop(img: torch.Tensor, output_size: List[int]) → torch.Tensor
+
+#Resize the input image to the given size
+#把图像缩放到指定尺寸
+torchvision.transforms.functional.resize(img: torch.Tensor, size: List[int], interpolation: int = 2) → torch.Tensor
+
+#Crop the given image and resize it to desired size
+#裁剪图片并将裁剪下来的图片缩放到指定尺寸
+torchvision.transforms.functional.resized_crop(img: torch.Tensor, top: int, left: int, height: int, width: int, size: List[int], interpolation: int = 2) → torch.Tensor
+
+#Crop the given image into four corners and the central crop. 
+#把原图以四个角和中心点裁剪成5个size大小的子图片
+torchvision.transforms.functional.five_crop(img: torch.Tensor, size: List[int]) → Tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor]
+
+#Generate ten cropped images from the given image.
+#在five_crop的基础上对五张子图片进行水平或者竖向翻转
+torchvision.transforms.functional.ten_crop(img: torch.Tensor, size: List[int], vertical_flip: bool = False) → List[torch.Tensor]
+
+#Pad the given image on all sides with the given “pad” value.
+#用指定值填充图像的边
+torchvision.transforms.functional.pad(img: torch.Tensor, padding: List[int], fill: int = 0, padding_mode: str = 'constant') → torch.Tensor
+
+#Convert a tensor image to the given dtype and scale the values accordingly.
+#转换tensor图像的数据类型并根据类型缩放数据值
+torchvision.transforms.functional.convert_image_dtype(image: torch.Tensor, dtype: torch.dtype = torch.float32) → torch.Tensor
+
+#Convert a PIL Image or numpy.ndarray to tensor.
+#把PIL图像或者数组转成tensor
+torchvision.transforms.functional.to_tensor(pic)
+
+#Convert a PIL Image to a tensor of the same type.
+#把PIL转成tensor
+torchvision.transforms.functional.pil_to_tensor(pic)
+
+#Convert a tensor or an ndarray to PIL Image.
+#把tensor或者数组转成PIL图像
+torchvision.transforms.functional.to_pil_image(pic, mode=None)
+
+#Convert RGB image to grayscale version of image.
+#彩色图像转灰度图像
+torchvision.transforms.functional.rgb_to_grayscale(img: torch.Tensor, num_output_channels: int = 1) → torch.Tensor
+
+#Convert PIL image of any mode (RGB, HSV, LAB, etc) to grayscale version of image.
+#把任意模式的图像转换为灰度图像
+torchvision.transforms.functional.to_grayscale(img, num_output_channels=1)
+
+```
+
+
+## 封装比较好的transform，也可以同时对PIL与tensor数据使用的函数包(其中还附带转换几率的参数)
+
+`torchvision.transforms`
+
+ -与torchvision.transforms.functional不同的地方应该是调用方法不同而已，具体使用的话可以直接序列化定义，方便代码编写
