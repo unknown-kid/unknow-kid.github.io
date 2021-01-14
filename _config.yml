@@ -1,10 +1,9 @@
-title: wu-kan # 站点标题
+title: jevon # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  SYSU超算17级在读<br/>
-  水野爱<br/>
-  HPC<br/>
-  田宫例四驱车<br/>
-  <a href="mailto:i@wu-kan.cn">
+  编程，球类运动，音乐，电影<br/>
+  LOL忠实玩家<br/>
+  因为眼睛有刀疤所以叫八（疤）哥<br/>
+  <a href="jiaw@hust.edu.cn">
     <i class="fas fa-envelope"></i>
   </a>
   <a href="https://github.com/wu-kan">
@@ -28,7 +27,7 @@ description: | # 头像背后的信息（html格式），<br/>代表换行
     marginwidth="0"
     marginheight="0"
   ></iframe>
-url: https://wu-kan.cn # 你的域名，例如 https://wu-kan.github.io
+url: https://www.asjevon.cn # 你的域名，例如 https://wu-kan.github.io
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
 defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/front-matter-defaults/>功能进行配置
