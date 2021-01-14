@@ -12,8 +12,7 @@
 
 <!-- .slide vertical=true -->
 
-- E-mail:
-  - **[jiaw@hust.edu.cn](mailto:jiaw@hust.edu.cn)**
+- E-mail: **[jiaw@hust.edu.cn](mailto:jiaw@hust.edu.cn)**
 - WeChat: **jiaweihenhao**
 - QQ: **379550761**
 
@@ -23,7 +22,7 @@
 
 <!-- .slide vertical=true -->
 
-**- Undergraduate (2013-2017)**
+- **Undergraduate (2013-2017)**
     - Sichuan Agriculture University
     - Major: IoT(Internet of Things)
 - **Master (2017-2020)**
