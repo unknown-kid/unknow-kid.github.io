@@ -2,20 +2,17 @@ title: jevon # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
   编程，球类运动，音乐，电影<br/>
   LOL忠实玩家<br/>
-  因为眼睛有刀疤所以叫八（疤）哥<br/>
+  因为眼睛有刀疤所以叫八哥（疤哥有点太社会）<br/>
   <a href="jiaw@hust.edu.cn">
     <i class="fas fa-envelope"></i>
   </a>
-  <a href="https://github.com/wu-kan">
+  <a href="https://github.com/unknown-kid">
     <i class="fab fa-github"></i>
   </a>
-  <a href="https://codeforces.com/profile/WuK">
-    <i class="fas fa-chart-bar"></i>
+  <a href="https://music.163.com/#/user/home?id=100380764">
+    <i class="fas fa-music"></i>
   </a>
-  <a href="https://vjudge.net/user/WuK">
-    <i class="fas fa-smile"></i>
-  </a>
-  <a href="https://www.zhihu.com/people/wu.kan/activities">
+  <a href="https://www.zhihu.com/people/jia-wei-38-60">
     <i class="fab fa-zhihu"></i>
   </a>
   <iframe
