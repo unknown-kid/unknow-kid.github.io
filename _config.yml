@@ -85,7 +85,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 onload='
                   let pio_container = document.createElement("div");
                   pio_container.classList.add("pio-container");
-                  pio_container.classList.add("right");
+                  pio_container.classList.add("left");
                   pio_container.style.bottom = "-2rem";
                   pio_container.style.zIndex = "1";
                   document.body.insertAdjacentElement("beforeend", pio_container);
