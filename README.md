@@ -23,15 +23,15 @@
 
 <!-- .slide vertical=true -->
 
-- .**Undergraduate (2013-2017)**
-    - .Sichuan Agriculture University
-    - .Major: IoT(Internet of Things)
-- .**Master (2017-2020)**
-    - .HuaZhong Agriculture University
-    - .Major: Computer vision and Deep Learning
-- .**Doctoral candidate (2020-Now)**
-    - .HuaZhong University of S&T, WuHan, China
-    - .Major: Cyber security on IoV (Internet of Vehicels)
+**- Undergraduate (2013-2017)**
+    - Sichuan Agriculture University
+    - Major: IoT(Internet of Things)
+- **Master (2017-2020)**
+    - HuaZhong Agriculture University
+    - Major: Computer vision and Deep Learning
+- **Doctoral candidate (2020-Now)**
+    - HuaZhong University of S&T, WuHan, China
+    - Major: Cyber security on IoV (Internet of Vehicels)
 
 <!-- .slide -->
 
