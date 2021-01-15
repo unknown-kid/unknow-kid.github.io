@@ -374,33 +374,8 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     document.getElementById("run_time_hour"),
                     document.getElementById("run_time_minute"),
                     document.getElementById("run_time_second"),
-                    "10/04/2017 11:03:56")// 这是我第一篇CSDN博客的时间
+                    "01/14/2021 11:03:56")// 这是我第一篇CSDN博客的时间
                   </script>
-                </div>
-              - | # 不蒜子页面统计，看不懂可不改
-                <div>
-                  <div>
-                    <i class="fas fa-eye fa-fw"></i>
-                    <span id="busuanzi_value_page_pv">
-                      <i class="fas fa-spinner fa-pulse"></i>
-                    </span>次
-                  </div>
-                  <div>
-                    <i class="fas fa-paw fa-fw"></i>
-                    <span id="busuanzi_value_site_pv">
-                      <i class="fas fa-spinner fa-pulse"></i>
-                    </span>枚
-                  </div>
-                  <div>
-                    <i class="fas fa-user-friends fa-fw"></i>
-                    <span id="busuanzi_value_site_uv">
-                      <i class="fas fa-spinner fa-pulse"></i>
-                    </span>人
-                  </div>
-                  <script
-                    src='https://cdn.jsdelivr.net/npm/busuanzi@2.3.0'
-                    async='async'
-                  ></script>
                 </div>
               - | # 觉得我的主题好用的话，让更多的人知道它吧！
                 <div>
