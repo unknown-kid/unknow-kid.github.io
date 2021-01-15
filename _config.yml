@@ -103,7 +103,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     "hidden": true,
                     "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
                     "content": {
-                      "link": ["https:\/\/jekyll-theme-WuK.wu-kan.cn"],
+                      "link": ["https:\/\/www.asjevon.cn"],
                       "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
                       "hidden": true,
                       "custom": [{
@@ -381,7 +381,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 <div>
                   <i class="fas fa-thumbs-up fa-fw"></i>
                   <a href="https://jekyll-theme-WuK.wu-kan.cn">
-                    jekyll-theme-WuK
+                    感谢主题作者，主题原链接：jekyll-theme-WuK
                   </a>
                 </div>
               - | # Copyright声明
