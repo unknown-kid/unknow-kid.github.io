@@ -173,7 +173,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 }
                 @media (min-aspect-ratio: 2400/1850) {
                   .wrap {
-                    background-image: url(https://cdn.jsdelivr.net/gh/unknown-kid/blog-images@main/snow3.jpg);
+                    background-image: url(https://cdn.jsdelivr.net/gh/unknown-kid/blog-images@main/snow2.jpg);
                   }
                 }
                 .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
