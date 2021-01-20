@@ -150,7 +150,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             - | # 百度爬虫推送，http站点使用 http://push.zhanzhang.baidu.com/push.js
               <script src='https://zz.bdstatic.com/linksubmit/push.js' async="async"></script>
             - |
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+              <script src="https://cdn.jsdelivr.net/gh/unknown-kid/blog-images@main/jquery.js"></script>
               <script src="https://cdn.jsdelivr.net/gh/unknown-kid/blog-images@main/jquery.snow.js"></script>
               <script>
               $(document).ready( function(){
