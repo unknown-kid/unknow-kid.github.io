@@ -150,7 +150,9 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             - | # 百度爬虫推送，http站点使用 http://push.zhanzhang.baidu.com/push.js
               <script src='https://zz.bdstatic.com/linksubmit/push.js' async="async"></script>
             - |
-              <script src="https://cdn.jsdelivr.net/gh/unknown-kid/blog-images@main/snow.js"></script>
+              <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/unknown-kid/blog-images@main/snowfall.jquery.min.js">
+              $('#element').snowfall({flakeCount : 800, maxSpeed : 5, maxSize : 5});
+              </script>
             - | # 网站背景图片，分竖屏、宽屏；改链接即可，不想用可以把这一项全删掉；要换壁纸图片的话可把url内的部分换成你自己的，比如你放在 /assets/image/background.jpg，那就改成 url(/assets/image/background.jpg)
               <style>
                 .wrap {
