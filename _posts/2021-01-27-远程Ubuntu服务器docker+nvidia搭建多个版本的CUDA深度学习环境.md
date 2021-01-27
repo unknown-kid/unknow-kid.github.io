@@ -1,7 +1,11 @@
 
-#远程配置Ubuntu深度学习服务器GPU驱动+Docker+CUDA多个版本（包含NVIDIA驱动安装、NVIDIA环境下docker的安装和使用、基本的docker使用）
+---
+title: 远程配置Ubuntu深度学习服务器GPU驱动+Docker+CUDA多个版本（包含NVIDIA驱动安装、NVIDIA环境下docker的安装和使用、基本的docker使用）
+tags:
+  - 环境搭建
+---
 
-##前言
+## 前言
 
 - 首先说一下为什么建议使用docker来使用搭建深度学习服务器。其实网上很多人都写了如何搭建CUDA10.0 + cudnn8.5 , CUDA9.0 + cudnn7.5 等等，并且从TensorFlow的官网你还可以了解到，不同版本的CUDA只能使用指定的几个TensorFlow版本（Pytorch更是只能下载指定CUDA版本的库），特别是在多个人同时使用的环境下，远程的深度学习服务器经常会崩掉，有可能是别人装了其他版本的CUDA，或者说有人想使用更高版本的CUDA就升级了GPU驱动，结果升级失败；还有可能是你自己想要用其他版本的深度学习框架来复现前人的code，结果发现要换个版本好难，甚至换个版本又把linux内核都升级了，恭喜你难受升级了。
 
@@ -11,7 +15,7 @@
 
 ##一、安装NVIDIA驱动
 
-###1. 直接安装
+### 1. 直接安装
 
 这种安装方式会比较快，但是很多不是刚装的系统会很难一次性装上，我之前也是有很多次部署GPU驱动都没办法用这种方式安装上，因此，建议刚装上的系统可以直接使用这个方法，只要源没有问题，基本上就可以，如果使用这种方法无法装上，那么就卸载了之后重新手动安装。
 
@@ -56,7 +60,7 @@
 <div align=center><img  src="https://cdn.jsdelivr.net/gh/unknown-kid/blog-images@main/2021-01-27/nvidia-smi.jpg"/></div>
 
 
-###2. 手动安装
+### 2. 手动安装
 
 **2.1 查询显卡型号**
 
@@ -151,7 +155,7 @@ options nouveau modeset=0
 
 <div align=center><img  src="https://cdn.jsdelivr.net/gh/unknown-kid/blog-images@main/2021-01-27/nvidia-smi.jpg"/></div>
 
-##二、docker配置
+## 二、docker配置
 
 首先，docker是什么，我就拿菜鸟教程里面的介绍来做引吧：
 
@@ -170,7 +174,7 @@ Docker 从 17.03 版本之后分为 CE（Community Edition: 社区版） 和 EE�
 简要的介绍就是：
 docker就是一个非常适合linux系统的虚拟机，而这个docker虚拟机最适合安装linux系统！（就和绕口令一样）
 
-###1.安装docker：
+### 1.安装docker：
 
 **1.1 官方脚本自动安装**
 
@@ -282,11 +286,11 @@ For more examples and ideas, visit:
 
 ```
 
-##三、如何使用docker搭建多个CUDA的深度学习环境
+## 三、如何使用docker搭建多个CUDA的深度学习环境
 
 首先修改一下docker容器的存储位置吧，多人使用的环境的话，最好还是自己设置一下，避免占用了别人的存储资源，其实我最好的建议还是大家拿一个公共存储地址作为docker的存储地址，这样大家都可以使用。
 
-###1. 修改docker存储位置（根据自身情况选择）
+### 1. 修改docker存储位置（根据自身情况选择）
 所以可以修改一下docker的存储位置，并且修改一下镜像拉取的地址：
 
 `sudo vim /lib/systemd/system/docker.service`
@@ -305,7 +309,7 @@ For more examples and ideas, visit:
 
 你找到：` Docker Root Dir: （这里应该就是你的新地址）`
 
-###2. 把自己的用户加入docker用户组（让你的用户不用sudo命令也能正常使用）
+### 2. 把自己的用户加入docker用户组（让你的用户不用sudo命令也能正常使用）
 
 如果没有docker用户组就创建一个：
 
@@ -325,7 +329,7 @@ For more examples and ideas, visit:
 
 这时候你就会发现docker已经不需要使用sudo就可以运行了
 
-###3.拉取有CUDA的深度学习docker镜像（终于到了最后一步，也是最重要的一步）
+### 3.拉取有CUDA的深度学习docker镜像（终于到了最后一步，也是最重要的一步）
 
 **3.1 拉取镜像并运行**
 
