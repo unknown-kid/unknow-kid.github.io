@@ -1,5 +1,5 @@
 ---
-title: ModuleNotFoundError: No module named ‘pip’处理方法（函数使用待更新）
+title: ModuleNotFoundError: No module named 'pip'处理方法（函数使用待更新）
 tags:
   - Pytorch技术
 ---
