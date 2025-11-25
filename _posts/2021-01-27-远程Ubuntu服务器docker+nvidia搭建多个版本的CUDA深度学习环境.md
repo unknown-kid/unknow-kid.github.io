@@ -25,7 +25,7 @@ tags:
 
 `ubuntu-drivers devices`
 
-然后系统会花一定时间来检测你的对应驱动型号（要等一下才会出来）：testtesttesttest
+然后系统会花一定时间来检测你的对应驱动型号（要等一下才会出来）：
 
 <div align=center><img  src="https://cdn.jsdelivr.net/gh/unknown-kid/blog-images@main/2021-01-27/ckqdxh.jpg"/></div>
 
@@ -426,4 +426,5 @@ curl -s -L https://nvidia.github.io/nvidia-container-runtime/experimental/$distr
 `docker attach (容器 ID)` 进入一个正在运行的容器
 
 `docker exec -it (容器 ID) /bin/bash` 容器多开
+
 
