@@ -1,5 +1,5 @@
 ---
-title: ModuleNotFoundError: No module named 'pip'处理方法
+title: No module named pip的处理方法
 tags:
   - Pytorch技术
 ---
