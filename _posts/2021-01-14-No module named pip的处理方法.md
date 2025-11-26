@@ -35,7 +35,7 @@ _用户手动标注：这是一篇更新的重点文章，并且同行评审的�
 
   首先，从官方源下载get-pip.py脚本：
   ```
- curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+ curl https://upgrade.pypa.io/get-pip.py -o get-pip.py
  ```
  然后，使用Python运行这个脚本以安装或升级pip：
  ```
